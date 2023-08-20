@@ -28,7 +28,7 @@ def mandelbrot_image(xmin,xmax,ymin,ymax,pixels,max_iter,cmap='hot'):
     x,y,z = mandelbrot_set(xmin,xmax,ymin,ymax,img_width,img_height,max_iter)
     
     for i in z:
-        for j in int(z[i]):
+        for j in z[i]:
             hue = int(255 * z[i,j] / max_iter)
             saturation = int(255)
             value = int(255 if z[i,j] < max_iter else 0)

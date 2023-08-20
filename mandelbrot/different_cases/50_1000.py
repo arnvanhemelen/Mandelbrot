@@ -35,8 +35,6 @@ def make_image(image, color, draw, pixel, max_iter):
     return 0
      
 def main():
-    pixel = 50
-    max_iter = 1000
     H = int(4/3)
     W = int(3)
     W = W * pixel
@@ -50,13 +48,11 @@ def main():
     # start with node 0 and work up to node 63
     # then send back data to node 0
     if rank == 0:
-        print(ondergrens, bovengrens)
         data = make_color(color, ondergrens, bovengrens, H, W, max_iter)
         comm.send(data, dest = (rank+1)%size)
     if rank > 0:
         if rank == 63: 
             bovengrens = W
-        print('rank:', rank, '--', ondergrens, bovengrens)
         data = comm.recv(source=(rank-1)%size)
         data_rank = make_color(data, ondergrens, bovengrens, H, W, max_iter)
         comm.send(data_rank, dest=(rank+1)%size)
@@ -69,11 +65,12 @@ if __name__ == '__main__':
     comm = MPI.COMM_WORLD
     rank = comm.rank
     size = comm.size
+    pixel = 50
+    max_iter = 1000
 
     start = MPI.Wtime()
     main()
     einde = MPI.Wtime()
-    if rank > 0:
-        print("rank:", rank, "-- time: ", einde-start, "sec")
     if rank == 0:
         print("Total runtime: ", einde-start)
+        print(pixel, max_iter)
