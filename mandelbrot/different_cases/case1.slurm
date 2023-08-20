@@ -1,7 +1,7 @@
 #!/bin/bash     
 #SBATCH --ntasks=64 --cpus-per-task=1
 #SBATCH --time=02:00:00
-#SBATCH --job-name run_different_cases
+#SBATCH --job-name case1
 #SBATCH -o %x.%j.stdout
 #SBATCH -e %x.%j.stderr
 
@@ -17,8 +17,3 @@ module load SciPy-bundle
 module list
 
 srun python 50_100.py
-srun python 50_1000.py
-srun python 50_10000.py
-srun python 500_100.py
-srun python 500_1000.py
-srun python 500_10000.py
