@@ -1,0 +1,187 @@
+
+Currently Loaded Modules:
+  1) calcua/all
+  2) intel/2020a
+  3) baselibs/2020a-GCCcore-9.3.0
+  4) X11/2020a-GCCcore-9.3.0
+  5) Tk/8.6.10-intel-2020a
+  6) HDF5/1.10.6-intel-2020a-MPI
+  7) METIS/5.1.0-intel-2020a-i32-fp64
+  8) SuiteSparse/5.7.1-intel-2020a-METIS-5.1.0
+  9) numba/0.49.1-intel-2020a-Python-3.8.3
+ 10) buildtools/2020a
+ 11) git/2.36.1
+ 12) gh/2.11.3
+ 13) GCCcore/11.3.0
+ 14) zlib/1.2.12-GCCcore-11.3.0
+ 15) binutils/2.38-GCCcore-11.3.0
+ 16) bzip2/1.0.8-GCCcore-11.3.0
+ 17) ncurses/6.3-GCCcore-11.3.0
+ 18) libreadline/8.1.2-GCCcore-11.3.0
+ 19) Tcl/8.6.12-GCCcore-11.3.0
+ 20) SQLite/3.38.3-GCCcore-11.3.0
+ 21) XZ/5.2.5-GCCcore-11.3.0
+ 22) GMP/6.2.1-GCCcore-11.3.0
+ 23) libffi/3.4.2-GCCcore-11.3.0
+ 24) OpenSSL/1.1
+ 25) Python/3.10.4-GCCcore-11.3.0
+ 26) NASM/2.15.05-GCCcore-11.3.0
+ 27) libjpeg-turbo/2.1.3-GCCcore-11.3.0
+ 28) libpng/1.6.37-GCCcore-11.3.0
+ 29) jbigkit/2.1-GCCcore-11.3.0
+ 30) gzip/1.12-GCCcore-11.3.0
+ 31) lz4/1.9.3-GCCcore-11.3.0
+ 32) zstd/1.5.2-GCCcore-11.3.0
+ 33) libdeflate/1.10-GCCcore-11.3.0
+ 34) LibTIFF/4.3.0-GCCcore-11.3.0
+ 35) Brotli/1.0.9-GCCcore-11.3.0
+ 36) freetype/2.12.1-GCCcore-11.3.0
+ 37) Pillow/9.1.1-GCCcore-11.3.0
+ 38) GCC/11.3.0
+ 39) numactl/2.0.14-GCCcore-11.3.0
+ 40) libxml2/2.9.13-GCCcore-11.3.0
+ 41) libpciaccess/0.16-GCCcore-11.3.0
+ 42) hwloc/2.7.1-GCCcore-11.3.0
+ 43) libevent/2.1.12-GCCcore-11.3.0
+ 44) UCX/1.12.1-GCCcore-11.3.0
+ 45) libfabric/1.15.1-GCCcore-11.3.0
+ 46) PMIx/4.1.2-GCCcore-11.3.0
+ 47) UCC/1.0.0-GCCcore-11.3.0
+ 48) OpenMPI/4.1.4-GCC-11.3.0
+ 49) OpenBLAS/0.3.20-GCC-11.3.0
+ 50) FlexiBLAS/3.2.0-GCC-11.3.0
+ 51) FFTW/3.3.10-GCC-11.3.0
+ 52) gompi/2022a
+ 53) FFTW.MPI/3.3.10-gompi-2022a
+ 54) ScaLAPACK/2.2.0-gompi-2022a-fb
+ 55) foss/2022a
+ 56) pybind11/2.9.2-GCCcore-11.3.0
+ 57) SciPy-bundle/2022.05-foss-2022a
+rank: 1 -- 2 4
+rank: 1 -- time:  0.008695622 sec
+rank: 2 -- 4 7
+rank: 2 -- time:  0.017759017 sec
+rank: 3 -- 7 9
+rank: 3 -- time:  0.026713955 sec
+rank: 4 -- 9 11
+rank: 4 -- time:  0.035390297 sec
+rank: 5 -- 11 14
+rank: 5 -- time:  0.036225134 sec
+rank: 6 -- 14 16
+rank: 6 -- time:  0.03714394 sec
+rank: 7 -- 16 18
+rank: 7 -- time:  0.03782804 sec
+rank: 8 -- 18 21
+rank: 8 -- time:  0.039487856 sec
+rank: 9 -- 21 23
+rank: 9 -- time:  0.048674879 sec
+rank: 10 -- 23 25
+rank: 10 -- time:  0.057905293 sec
+rank: 11 -- 25 28
+rank: 11 -- time:  0.067433582 sec
+rank: 12 -- 28 30
+rank: 12 -- time:  0.069034468 sec
+rank: 13 -- 30 32
+rank: 13 -- time:  0.078555467 sec
+rank: 14 -- 32 35
+rank: 14 -- time:  0.088396223 sec
+rank: 15 -- 35 37
+rank: 15 -- time:  0.098257346 sec
+rank: 16 -- 37 39
+rank: 16 -- time:  0.108165129 sec
+rank: 17 -- 39 42
+rank: 17 -- time:  0.118491447 sec
+rank: 18 -- 42 44
+rank: 18 -- time:  0.120560616 sec
+rank: 19 -- 44 46
+rank: 19 -- time:  0.12300428 sec
+rank: 20 -- 46 49
+rank: 20 -- time:  0.133547544 sec
+rank: 21 -- 49 51
+rank: 21 -- time:  0.144232106 sec
+rank: 22 -- 51 53
+rank: 22 -- time:  0.15492777700000004 sec
+rank: 23 -- 53 56
+rank: 23 -- time:  0.158138141 sec
+rank: 24 -- 56 58
+rank: 24 -- time:  0.168918381 sec
+rank: 25 -- 58 60
+rank: 25 -- time:  0.171781419 sec
+rank: 26 -- 60 63
+rank: 26 -- time:  0.175425555 sec
+rank: 27 -- 63 65
+rank: 27 -- time:  0.17912919000000005 sec
+rank: 28 -- 65 67
+rank: 28 -- time:  0.19080728700000005 sec
+rank: 29 -- 67 70
+rank: 29 -- time:  0.20331110200000002 sec
+rank: 30 -- 70 72
+rank: 30 -- time:  0.21547695200000005 sec
+rank: 31 -- 72 75
+rank: 31 -- time:  0.22051180699999995 sec
+rank: 32 -- 75 77
+rank: 32 -- time:  0.23321879899999998 sec
+rank: 33 -- 77 79
+rank: 33 -- time:  0.237505156 sec
+rank: 34 -- 79 82
+rank: 34 -- time:  0.242800338 sec
+rank: 35 -- 82 84
+rank: 35 -- time:  0.24751482800000002 sec
+rank: 36 -- 84 86
+rank: 36 -- time:  0.252460755 sec
+rank: 37 -- 86 89
+rank: 37 -- time:  0.26587651700000003 sec
+rank: 38 -- 89 91
+rank: 38 -- time:  0.27102379 sec
+rank: 39 -- 91 93
+rank: 39 -- time:  0.276495669 sec
+rank: 40 -- 93 96
+rank: 40 -- time:  0.282945604 sec
+rank: 41 -- 96 98
+rank: 41 -- time:  0.296155618 sec
+rank: 42 -- 98 100
+rank: 42 -- time:  0.30163356799999996 sec
+rank: 43 -- 100 103
+rank: 43 -- time:  0.30777550600000003 sec
+rank: 44 -- 103 105
+rank: 44 -- time:  0.321401854 sec
+rank: 45 -- 105 107
+rank: 45 -- time:  0.326751345 sec
+rank: 46 -- 107 110
+rank: 46 -- time:  0.33302989299999997 sec
+rank: 47 -- 110 112
+rank: 47 -- time:  0.338461063 sec
+rank: 48 -- 112 114
+rank: 48 -- time:  0.34439490399999995 sec
+rank: 49 -- 114 117
+rank: 49 -- time:  0.35867455299999995 sec
+rank: 50 -- 117 119
+rank: 50 -- time:  0.37208245399999995 sec
+rank: 51 -- 119 121
+rank: 51 -- time:  0.38529553000000005 sec
+rank: 52 -- 121 124
+rank: 52 -- time:  0.390118718 sec
+rank: 53 -- 124 126
+rank: 53 -- time:  0.395224453 sec
+rank: 54 -- 126 128
+rank: 54 -- time:  0.40047136400000005 sec
+rank: 55 -- 128 131
+rank: 55 -- time:  0.405539709 sec
+rank: 56 -- 131 133
+rank: 56 -- time:  0.411215255 sec
+rank: 57 -- 133 135
+rank: 57 -- time:  0.42448239899999995 sec
+rank: 58 -- 135 138
+rank: 58 -- time:  0.429971448 sec
+rank: 59 -- 138 140
+rank: 59 -- time:  0.435424598 sec
+rank: 60 -- 140 142
+rank: 60 -- time:  0.44081840800000005 sec
+rank: 61 -- 142 145
+rank: 61 -- time:  0.45446016499999997 sec
+rank: 62 -- 145 147
+rank: 62 -- time:  0.460096253 sec
+rank: 63 -- 147 150
+rank: 63 -- time:  0.46632953 sec
+0 2
+Total runtime:  0.49695681700000005
