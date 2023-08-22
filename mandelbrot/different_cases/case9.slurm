@@ -1,6 +1,6 @@
 #!/bin/bash     
 #SBATCH --ntasks=64 --cpus-per-task=1
-#SBATCH --time=02:00:00
+#SBATCH --time=06:00:00
 #SBATCH --job-name case9
 #SBATCH -o case9.stdout
 #SBATCH -e case9.stderr
