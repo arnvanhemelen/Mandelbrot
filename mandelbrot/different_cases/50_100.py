@@ -8,7 +8,7 @@ def mandelbrot(c):
     # Returns the number of iterations
     z = c
     for n in range(max_iter):
-        if z.real * z.real + z.imag * z.imag > 4.0:
+        if abs(z) > 2.0:
             return n
         z = z*z + c
     return max_iter

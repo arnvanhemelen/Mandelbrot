@@ -36,7 +36,7 @@ def make_image(image, color, draw, pixel, max_iter):
      
 def main():
     pixel = 50
-    max_iter = 1000
+    max_iter = 100
     H = int(4/3)
     W = int(3)
     W = W * pixel

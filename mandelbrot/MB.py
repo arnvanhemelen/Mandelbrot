@@ -1,31 +1,28 @@
 import numpy
-import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw
-
-
-max_iter = 80
+import time
 
 def mandelbrot(c):
     z = 0
     for i in range(max_iter):
-        z = z*z + c
-        if (z.real*z.real + z.imag*z.imag) >= 4:
+        if ((z.real*z.real + z.imag*z.imag) >= 4):
             return i
-    return i
+        z = z*z + c
+    return max_iter
 
-# Image size (pixels)
-W = 600
-H = 400
+start = time.time()
 
+max_iter = 100
+pixel = 50
 # Plot window
 real_min = -2
 real_max = 1
 imag_min = 0
 imag_max = 4/3
+W = int((real_max - real_min)*pixel)
+H = int((imag_max - imag_min)*pixel)
 
-palette = []
-
-im = Image.new('RGB', (W, H), (0, 0, 0))
+im = Image.new('HSV', (W, H), (0, 0, 0))
 draw = ImageDraw.Draw(im)
 
 for x in range(0, W):
@@ -36,8 +33,12 @@ for x in range(0, W):
         # Compute the number of iterations
         m = mandelbrot(c)
         # The color depends on the number of iterations
-        color = 255 - int(m * 255 / max_iter)
-        # Plot the point
-        draw.point([x, y], (color, color, color))
+        hue=int(255 * m / max_iter)
+        saturation=(int(255))
+        value=int(255 if m < max_iter else 0)
+        # PLOT 
+        draw.point([x, y], (hue, saturation, value))
+im.convert('RGB').save('output.png', 'PNG')
 
-im.save('output.png', 'PNG')
+end = time.time()
+print(end - start, "seconden")
